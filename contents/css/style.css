@@ -26,6 +26,7 @@ a {
     font-weight: 100;
     font-style: normal;
     line-height: 10%;
+    text-decoration: underline;
   }
 
 .header {
