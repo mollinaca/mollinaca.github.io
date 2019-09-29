@@ -1,0 +1,79 @@
+{
+   "updated_at": "2019/09/29",
+   "About_me": {
+      "name": "s.hosoya",
+      "age": 31,
+      "sex": "male"
+   },
+   "Qualifications": {
+      "explain": "クラウド（IaaSがメイン、一部PaaSも利用）を用いたゲーム用サーバインフラストラクチャの構成提案、構築、保守、運用、管理",
+      "detail": [
+         "ゲーム要件（非技術者の要求、開発実装者の説明）からインフラのワークロードの推定と構成の提案",
+         "提案内容に基づいた構築",
+         "非機能要件テスト（負荷試験）の実施とサポート",
+         "監視システムの構築",
+         "24/365の運用チームて定期的にアラート1次受け、対応を担当（チーム内で当番制）",
+         "セキュリティ監視の導入、運用"
+      ]
+   },
+   "Personality": {
+      "explain": "業務における性格、人間性など",
+      "detail": {
+         "1": "技術そのものよりも、好きなモノ（サービス）、人のために働くことが好き",
+         "2": "サービスを成功に導くために、技術課題の解決を行ってきたが、技術課題だけが問題ではないシーンでは他の分野でも協力を行う",
+         "3": "必要なことは必要に応じて学ぶ。技術課題を解決するための方法ももちろん、それ以外でも勉強が必要になれば都度学習は行う"
+      },
+      "sub2": [
+         "PM業務やそのサポート",
+         "サービスそのものの評価など"
+      ],
+      "sub3": [
+         "技術分野はそもそも日々勉強",
+         "技術分野以外でも、必要に応じて学習し、役に立てるように努めつつ、自身のスキルアップを目指す"
+      ]
+   },
+   "Experience": {
+      "explain": "実務（利用）経験のあるOS、言語、ミドルウェア類",
+      "detail": {
+         "OS": "CentOS",
+         "Shell": "Bash",
+         "WebServer": "Apache,Nginx",
+         "ProgramingLanguage": "php（Apache+mod_php,Nginx+php_fpm）,ruby（RoR,Nginx+unicorn/puma）",
+         "DB": "MySQL,PostgreSQL",
+         "Cache": "memcached,redis,mondodb",
+         "monitoring_tool": "zabbix,munin,Prometheus（Prometheus+node_exporter+Grafana）",
+         "security": "audit,ClamAV,tripwire",
+         "IaC": "Ansible",
+         "LoadTest_tool": "Jmeter",
+         "CDN": "Akamai,Fastly,CDNetworks",
+         "CloudServices": "AWS,GCP,NiftyCloud"
+      }
+   },
+   "Interest": {
+      "explain": "実務利用経験はないが、個人的に触ったことあるもの、知識としては知っているもの、興味のあるもの",
+      "detail": {
+         "1": "Docker,k8s",
+         "2": "Terraform（IaC）",
+         "3": "Prometheus（自作expoter、GrafanaLokiなど）",
+         "4": "BigQueryなどの分析基盤、ETLやその可視化、ダッシュボード作成",
+         "5": "Splunk,CrowdStrikeなどのセキュリティソリューション",
+         "6": "NewRelic,AppDynamics,Dynatrace（SaaS系モニタリングツール）"
+      },
+      "sub3": [
+         "golang"
+      ]
+   },
+   "hobby": {
+      "explain": "その他、趣味、好きなこと",
+      "detail": [
+         "音楽（ピアノ/ベース）",
+         "ゲーム",
+         "散歩、旅、写真（風景撮影）"
+      ]
+   },
+   "Biography": {
+      "201910": "現チーム（MMO系サーバインフラの運用管理チーム）へ異動",
+      "201404": "ゲーム系企業へ新卒入社、ソーシャルゲーム系サーバインフラの運用管理チームへ配属",
+      "201403": "情報系の大学院を卒業（修士）"
+   }
+}
