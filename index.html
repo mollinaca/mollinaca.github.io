@@ -5,17 +5,98 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--    
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-            <link rel="stylesheet" href="./contents/css/style.min.css">
- -->
-            <title>my profile page</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <title>hstn my resume</title>
+            <link rel="stylesheet" href="./contents/css/style.css">
+            <link rel="shortcut icon" type="image/x-icon" href="./contents/img/favicon.ico">
     </head>
 
     <body>
-            <img src="./contents/img/my_icon.jpg">
-            <img src="./contents/img/twitter.png">
-            <img src="./contents/img/github.png">
+        <div class="container">
+            <div class="header">
+                <img src="./contents/img/my_icon.jpg" alt="pic" title="2015年8月ごろ 福井県東尋坊付近にて撮影">
+                <a href="https://twitter.com/syoutin" target="_blank" rel="noopener noreferrer"><img src="./contents/img/twitter.png" alt="link" title="twitter"></a>
+                <a href="https://github.com/mollinaca" target="_blank" rel="noopener noreferrer"><img src="./contents/img/github.png" alt="link" title="github"></a>
+                <a href="https://qiita.com/mollinaca" target="_blank" rel="noopener noreferrer"><img src="./contents/img/qiita-favicon.png" alt="link" title="github"></a>
+            </div>
+            <div class="info">
+                updated_at: 2019/09/29
+            </div>
+            <div class="contents">
+                <h1 class="title">About Me</h1>
+                <p>name: s.hosoya</p>
+                <p>age: 31</p>
+                <p>sex: male</p>
+                <h1 class="title">Qualifications</h1>
+                <p>クラウド(IaaSがメイン、一部PaaSも利用)を用いたゲーム用サーバインフラストラクチャの構成提案、構築、保守、運用、管理
+                    <ul>
+                        <li>ゲーム要件（非技術者の要求、開発実装者の説明）からインフラのワークロードの推定と構成の提案</li>
+                        <li>提案内容に基づいた構築</li>
+                        <li>非機能要件テスト（負荷試験）の実施とサポート</li>
+                        <li>監視システムの構築</li>
+                        <li>24/365の運用チームて定期的にアラート1次受け、対応を担当（チーム内で当番制）</li>
+                        <li>セキュリティ監視の導入、運用</li>
+                    </ul>
+                </p>
+                <h1 class="title">Personality</h1>
+                <p>業務における性格、人間性など
+                    <ul>
+                        <li>技術そのものよりも、好きなモノ（サービス）、人のために働くことが好き</li>
+                        <li>サービスを成功に導くために、技術課題の解決を行ってきたが、技術課題だけが問題ではないシーンでは他の分野でも協力を行う</li>
+                        <ul>
+                            <li>PM業務やそのサポート</li>
+                            <li>サービスそのものの評価など</li>
+                        </ul>
+                        <li>必要なことは必要に応じて学ぶ。技術課題を解決するための方法ももちろん、それ以外でも勉強が必要になれば都度学習は行う</li>
+                        <ul>
+                            <li>技術分野はそもそも日々勉強</li>
+                            <li>技術分野以外でも、必要に応じて学習し、役に立てるように努めつつ、自身のスキルアップを目指す</li>
+                        </ul>
+                    </ul>
+                </p>
+                <h1 class="title">Experience</h1>
+                <p>実務(利用)経験のあるOS、言語、ミドルウェア類
+                    <ul>
+                        <li>OS: CentOS</li>
+                        <li>Shell: Bash</li>
+                        <li>WebServer: Apache, Nginx</li>
+                        <li>ProgramingLanguage: php(Apache+mod_php, Nginx+php_fpm), ruby(RoR, Nginx+unicorn/puma),</li>
+                        <li>DB: MySQL, PostgreSQL</li>
+                        <li>Cache: memcached, redis, mondodb</li>
+                        <li>monitoring tool: zabbix, munin, Prometheus(Prometheus+node_exporter+Grafana</li>
+                        <li>security: audit, ClamAV, tripwire</li>
+                        <li>IaC: Ansible</li>
+                        <li>LoadTest tool: Jmeter</li>
+                        <li>CDN: Akamai, Fastly, CDNetworks</li>
+                        <li>CloudServices: AWS, GCP, NiftyCloud</li>
+                    </ul>
+                    その他、クラウドサービスを使ったネットワーク設計(VPC、FWなど)、CI/CD環境の構築など
+                </p>
+                <h1 class="title">Interest</h1>
+                <p>実務利用経験はないが、個人的に触ったことあるもの、知識としては知っているもの、興味のあるもの
+                    <ul>
+                        <li>Docker, k8s</li>
+                        <li>Terraform(IaC)</li>
+                        <li>Prometheus(自作expoter、Grafana Lokiなど)</li>
+                        <ul>
+                            <li>golang</li>
+                        </ul>
+                        <li>BigQueryなどの分析基盤、ETLやその可視化、ダッシュボード作成</li>
+                        <li>Splunk, CrowdStrikeなどのセキュリティソリューション</li>
+                        <li>NewRelic, AppDynamics, Dynatrace(SaaS系モニタリングツール)</li>
+                    </ul>
+                </p>
+                <h1 class="title">hobby</h1>
+                <p>その他、趣味、好きなこと</p>
+                    <ul>
+                        <li>音楽（ピアノ/ベース）</li>
+                        <li>ゲーム</li>
+                        <li>散歩、旅、写真（風景撮影）</li>
+                    </ul>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
 
-        </body>
+    </body>
 </html>
