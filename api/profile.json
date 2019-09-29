@@ -34,6 +34,7 @@
    },
    "Experience": {
       "explain": "実務（利用）経験のあるOS、言語、ミドルウェア類",
+      "additional_info": "その他、クラウドサービスを使ったネットワーク設計（VPC、FWなど）、CI/CD環境の構築など",
       "detail": {
          "OS": "CentOS",
          "Shell": "Bash",
